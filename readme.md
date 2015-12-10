@@ -116,7 +116,7 @@ Default: `false`
 
 Automatically attach an inline source map comment to the end of the generated code.
 
-#### testResult
+### testResult
 
 ##### testResult.code
 
