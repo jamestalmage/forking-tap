@@ -58,7 +58,7 @@ describe('bar', function () {
 });
 ```
 
-Notice how all the appropriate helper functions and shared variables make it into each test.
+Notice how all the appropriate helper functions and shared variables make it into each test. `tap` already forks and runs each file in a new process, so you just need to run the standard `tap` command and pass in the generate files.
 
 ## Install
 
@@ -78,6 +78,8 @@ results.forEach((result, testNum) => {
   fs.writeFileSync('./test-number-' + testNum, result.code);
 });
 ```
+
+*Note: * `forking-tap` currently only provides a transform. It does not provide a means of reading in file(s) or writing the results to disk. That may change in the future. (Help wanted!) 
 
 
 ## API
@@ -114,21 +116,21 @@ Default: `false`
 
 Automatically attach an inline source map comment to the end of the generated code.
 
-### testResult
+#### testResult
 
-#### testResult.code
+##### testResult.code
 
 Type: `string`
 
 The full source code for an individual test
 
-#### testResult.map
+##### testResult.map
 
 Type: `object`
 
 The source map descriptor object for the transform (or `undefined` if `filename` was not provided, or `options.sourceMaps === false`).
 
-#### testResult.nestedName
+##### testResult.nestedName
 
 Type: `Array.<string>`
 
@@ -139,7 +141,7 @@ For example, the following:
 ```js
 describe('foo', function () {
   describe('bar', function () {
-    it('baz', function () { /* ... */});
+    it('baz', function () { /* ... */ });
   });
 });
 ```
