@@ -1,6 +1,6 @@
 {
   "name": "forking-tap",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Run every single tap test in its own process.",
   "license": "MIT",
   "repository": "jamestalmage/forking-tap",
