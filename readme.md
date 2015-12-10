@@ -1,4 +1,4 @@
-# forking-tap [![Build Status](https://travis-ci.org/jamestalmage/forking-tap.svg?branch=master)](https://travis-ci.org/jamestalmage/forking-tap)
+# forking-tap [![Build Status](https://travis-ci.org/jamestalmage/forking-tap.svg?branch=master)](https://travis-ci.org/jamestalmage/forking-tap) [![Coverage Status](https://coveralls.io/repos/jamestalmage/forking-tap/badge.svg?branch=master&service=github)](https://coveralls.io/github/jamestalmage/forking-tap?branch=master)
 
 > Run every single tap test in its own process. 
 
