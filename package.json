@@ -1,0 +1,48 @@
+{
+  "name": "forking-tap",
+  "version": "0.0.0",
+  "description": "Run every single tap test in its own process.",
+  "license": "MIT",
+  "repository": "jamestalmage/forking-tap",
+  "author": {
+    "name": "James Talmage",
+    "email": "james@talmage.io",
+    "url": "github.com/jamestalmage"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && nyc --reporter=lcov --reporter=text ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "tap",
+    "forked",
+    "forking",
+    "test",
+    "tests",
+    "testing",
+    "isolation",
+    "globals"
+  ],
+  "dependencies": {
+    "inline-source-map-comment": "^1.0.5",
+    "recast": "^0.10.39"
+  },
+  "devDependencies": {
+    "ava": "^0.7.0",
+    "convert-source-map": "^1.1.2",
+    "coveralls": "^2.11.4",
+    "nyc": "^4.0.1",
+    "source-map": "^0.5.3",
+    "xo": "^0.11.2"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
+  }
+}
