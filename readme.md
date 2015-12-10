@@ -2,7 +2,7 @@
 
 > Run every single tap test in its own process. 
 
-`forking tap` takes a single test:
+`forking tap` takes a single tap-mocha test file:
 
 ```js
 require('tap').mochaGlobals()
@@ -23,7 +23,7 @@ describe('bar', function () {
 });
 ```
 
-And splits it into three different files (one for each test):
+And splits it into multiple files with one test each:
 
 ```js
 require('tap').mochaGlobals();
