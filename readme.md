@@ -58,7 +58,7 @@ describe('bar', function () {
 });
 ```
 
-Notice how all the appropriate helper functions and shared variables make it into each test. `tap` already forks and runs each file in a new process, so you just need to run the standard `tap` command and pass in the generate files.
+Notice how all the appropriate helper functions and shared variables make it into each test. `tap` already forks and runs each file in a new process, so you just need to run the standard `tap` command and pass in the generated files.
 
 ## Install
 
