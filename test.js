@@ -25,7 +25,7 @@ test('it provides accurate source maps', t => {
 		column: 8
 	});
 
-	t.same(loc, {
+	t.deepEqual(loc, {
 		source: 'foo.js',
 		line: 9,
 		column: 8,
@@ -47,7 +47,7 @@ test('it will attach source map comments', t => {
 		column: 8
 	});
 
-	t.same(loc, {
+	t.deepEqual(loc, {
 		source: 'foo.js',
 		line: 9,
 		column: 8,
@@ -58,9 +58,9 @@ test('it will attach source map comments', t => {
 test('nested names', t => {
 	const results = fn(input);
 
-	t.same(results[0].nestedName, ['foo', 'foo-1']);
-	t.same(results[1].nestedName, ['foo', 'foo-2']);
-	t.same(results[2].nestedName, ['bar', 'bar-1']);
+	t.deepEqual(results[0].nestedName, ['foo', 'foo-1']);
+	t.deepEqual(results[1].nestedName, ['foo', 'foo-2']);
+	t.deepEqual(results[2].nestedName, ['bar', 'bar-1']);
 });
 
 function trim(code) {
